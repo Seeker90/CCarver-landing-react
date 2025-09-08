@@ -26,10 +26,10 @@ const Card = () => {
     ];
     
     return (
-        <div className="container mb-4 justify-content-center">
+        <div className="container mb-4">
         <div className="row g-3">
             {cards.map((card, index) => (
-            <div className="col-10 col-sm-6 col-md-3" key={index}>
+            <div className="col-10 col-sm-6 col-md-3 mx-auto" key={index}>
                 <div className="card h-100">
                 <img src={card.img} className="card-img-top" alt={card.title} />
                 <div className="card-body text-center">
