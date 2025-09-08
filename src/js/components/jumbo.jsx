@@ -14,7 +14,7 @@ const Jumbo = () => {
                     </p>
                 </div> 
             </div>
-            <div className="col-"></div>
+            <div className="col-1"></div>
         </div>
         </>
     );

@@ -26,7 +26,7 @@ const Card = () => {
     ];
     
     return (
-        <div className="container ">
+        <div className="container mb-4 justify-content-center">
         <div className="row g-3">
             {cards.map((card, index) => (
             <div className="col-10 col-sm-6 col-md-3" key={index}>
