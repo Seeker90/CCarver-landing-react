@@ -26,24 +26,22 @@ const Card = () => {
     ];
     
     return (
-        <>
-            <div className="row">
-                <div className="col-1"></div>
-                <div className="col-10 d-flex justify-content-between">
-                    {cards.map((card, index) => (
-                        <div className="card-img" style={{ width: "10rem"}} key={index}>
-                            <img src={card.img} className={card.name} alt={card.title} style={{width: "10rem"}}/>
-                            <div className="card-body">
-                                <h5>{card.title}</h5>
-                                <p>{card.text}</p>
-                                <a href="#" className="btn btn-primary">Find out More!</a>
-                            </div>
-                        </div>
-                    ))}
-                  </div>
-                <div className="col-1"></div>
+        <div className="container ">
+        <div className="row g-3">
+            {cards.map((card, index) => (
+            <div className="col-10 col-sm-6 col-md-3" key={index}>
+                <div className="card h-100">
+                <img src={card.img} className="card-img-top" alt={card.title} />
+                <div className="card-body text-center">
+                    <h5 className="card-title">{card.title}</h5>
+                    <p className="card-text">{card.text}</p>
+                    <a href="#" className="btn btn-primary">Find out More!</a>
+                </div>
+                </div>
             </div>
-        </>
+            ))}
+        </div>
+        </div>
     );
 };
 
